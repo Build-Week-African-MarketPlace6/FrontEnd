@@ -1,7 +1,6 @@
-import logo from './logo.svg';
 import './App.css';
 import AddForm from './components/AddForm';
-import { Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Home from './components/Home';
 import AddProduct from './components/AddProduct';
@@ -12,7 +11,7 @@ function App() {
 	return (
 		<div className='App'>
 			<Header />
-			<Routes>
+			<Router>
 				<Route path='/Signup'>
 					<Signup />
 				</Route>
@@ -25,7 +24,7 @@ function App() {
 				<Route path='AddItem'>
 					<AddForm />
 				</Route>
-			</Routes>
+			</Router>
 		</div>
 	);
 }
