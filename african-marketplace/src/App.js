@@ -1,16 +1,16 @@
-import { Route, Routes } from 'react-router-dom';
+import logo from './logo.svg';
 import './App.css';
-import React from 'react';
-
 import AddForm from './components/AddForm';
+import { Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Home from './components/Home';
+import AddProduct from './components/AddProduct';
 import Login from './components/Login';
 import Signup from './components/Signup';
 
 function App() {
 	return (
-		<div className='page-wrapper'>
+		<div className='App'>
 			<Header />
 			<Routes>
 				<Route path='/Signup'>
@@ -22,7 +22,7 @@ function App() {
 				<Route exact path='/'>
 					<Home />
 				</Route>
-				<Route path='/AddItem'>
+				<Route path='AddItem'>
 					<AddForm />
 				</Route>
 			</Routes>
