@@ -3,7 +3,7 @@ import Featured from './Main/Featured';
 import Banner from './Main/Banner';
 import Content from './Main/Content';
 
-class Main extends React.Component {
+class Home extends React.Component {
 	render() {
 		return (
 			<div>
@@ -15,4 +15,4 @@ class Main extends React.Component {
 	}
 }
 
-export default Main;
+export default Home;

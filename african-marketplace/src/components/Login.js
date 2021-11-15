@@ -7,6 +7,7 @@ import {
 	FormLabel,
 } from 'react-bootstrap';
 
+<<<<<<< HEAD
 class Signup extends React.Component {
 	render() {
 		return (
@@ -36,3 +37,13 @@ class Signup extends React.Component {
 }
 
 export default Signup;
+=======
+export default function Login() {
+
+    return (
+        <h1>
+            Login
+        </h1>
+    )
+}
+>>>>>>> origin/main

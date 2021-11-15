@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from 'react';
 import {
 	Form,
@@ -36,3 +37,15 @@ class Signup extends React.Component {
 }
 
 export default Signup;
+=======
+import React from "react";
+
+export default function Signup() {
+
+    return (
+        <h1>
+            Sign Up
+        </h1>
+    )
+}
+>>>>>>> origin/main
