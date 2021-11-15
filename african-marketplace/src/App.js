@@ -8,7 +8,7 @@ import Home from './components/Home'
 import Login from "./components/Login";
 import Signup from "./components/Signup";
 import useDarkmode from './hooks/useDarkmode';
-import PrivateRoute from './components/PrivateRoute';
+// import PrivateRoute from './components/PrivateRoute';
 
 function App() {
 
