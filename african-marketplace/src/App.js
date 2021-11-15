@@ -15,10 +15,11 @@ function App() {
   const [cart, setCart] = useState([]);
   const [ darkmode, setDarkmode ] = useDarkmode();
 
-  const toggleMode = event => {
-    event.preventDefault();
-    setDarkmode(!darkmode);
-  } 
+  // const toggleMode = event => {
+  //   event.preventDefault();
+  //   setDarkmode(!darkmode);
+  // } 
+  
   const addItem = item => {
 		setCart([...cart, item])
 	};
@@ -33,6 +34,10 @@ function App() {
 
       <Link to='/productList'>Products</Link>
       <Link to='/cart'>Cart</Link>
+      <Link to='/'>Home</Link>
+      <Link to='/Login'>Login</Link>
+      <Link to='/Signup'>Sign Up</Link>
+
 
    <Switch>
       <Route exact path="/">
@@ -50,15 +55,19 @@ function App() {
       <Route exact path = "/" component = {Login} />
 
       <Route exact path = "/signup" component = {Signup}/>
-      {/* <Route path='/Signup'>
-                <Signup />
-            </Route>
-            <Route path='/Login'>
-                <Login />
-            </Route>
-            <Route exact path='/'>
-                <Home/>
-            </Route> */}
+
+      <Route path='/Signup'>
+        <Signup />
+      </Route>
+
+      <Route path='/Login'>
+        <Login />
+      </Route>
+
+     <Route exact path='/'>
+        <Home/>
+      </Route>
+
    </Switch>
     </div>
     </Router>
