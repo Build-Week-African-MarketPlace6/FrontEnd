@@ -14,7 +14,7 @@ import PrivateRoute from './components/PrivateRoute';
 function App() {
 
   const [ darkmode, setDarkmode ] = useDarkmode();
- 
+
   const toggleMode = event => {
     event.preventDefault();
     setDarkmode(!darkmode);
