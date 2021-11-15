@@ -1,12 +1,5 @@
-<<<<<<< HEAD
 import React from 'react';
-import {
-	Form,
-	Button,
-	FormControl,
-	FormGroup,
-	FormLabel,
-} from 'react-bootstrap';
+import { Form, Button } from 'react-bootstrap';
 
 class Signup extends React.Component {
 	render() {
@@ -37,15 +30,3 @@ class Signup extends React.Component {
 }
 
 export default Signup;
-=======
-import React from "react";
-
-export default function Signup() {
-
-    return (
-        <h1>
-            Sign Up
-        </h1>
-    )
-}
->>>>>>> origin/main
