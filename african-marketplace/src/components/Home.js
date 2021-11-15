@@ -1,7 +1,7 @@
 import React from 'react';
-import Featured from './Main/Featured';
-import Banner from './Main/Banner';
-import Content from './Main/Content';
+import Featured from './HomeContent/Featured';
+import Banner from './HomeContent/Banner';
+import Content from './HomeContent/Content';
 
 class Home extends React.Component {
 	render() {
