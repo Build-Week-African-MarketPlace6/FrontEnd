@@ -1,33 +1,51 @@
 import './App.css';
 import AddForm from './components/AddForm';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
-import Header from './components/Header';
-import Home from './components/Home';
-import AddProduct from './components/AddProduct';
+// import {Link, Route, Switch} from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
+// import Header from './components/Header';
+// import Home from './components/Home';
+// import AddProduct from './components/AddProduct';
 import Login from './components/Login';
 import Signup from './components/Signup';
+import useDarkmode from './hooks/useDarkmode';
+// import PrivateRoute from './components/PrivateRoute';
 
 function App() {
-	return (
-		<div className='App'>
-			<AddForm />
+	const [darkmode, setDarkmode] = useDarkmode();
 
-			<Header />
-			<Router>
-				<Route path='/Signup'>
-					<Signup />
-				</Route>
-				<Route path='/Login'>
-					<Login />
-				</Route>
-				<Route exact path='/'>
-					<Home />
-				</Route>
-				<Route path='AddItem'>
-					<AddForm />
-				</Route>
-			</Router>
-		</div>
+	const toggleMode = (event) => {
+		event.preventDefault();
+		setDarkmode(!darkmode);
+	};
+
+	return (
+		<Router>
+			<Routes>
+				<div className='App'>
+					<Route exact path='/' component={Login} />
+					<Route exact path='/signup' component={Signup} />
+				</div>
+			</Routes>
+		</Router>
+		// <div className="App">
+		//     {/* <Header/>
+
+		//     <Route path='/AddProduct'>
+		//         <AddProduct/>
+		//     </Route>
+		//     <Route path='/Signup'>
+		//         <Signup />
+		//     </Route>
+		//     <Route path='/Login'>
+		//         <Login />
+		//     </Route>
+		//     <Route exact path='/'>
+		//         <Home/>
+		//     </Route>
+
+		//     <AddForm/> */}
+		// </div>
 	);
 }
 
