@@ -1,21 +1,13 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
-export default function Head() {
+export default function Header() {
 	return (
-		<div className='head'>
-			<Link className='Nav' to='/'>
-				Home
-			</Link>
-			<Link className='Nav' to='/login'>
-				Login
-			</Link>
-			<Link className='Nav' to='/Signup'>
-				Sign Up
-			</Link>
-			<Link className='Nav' to='/AddProduct'>
-				Add Product
-			</Link>
-		</div>
+		<section id='header'>
+			{' '}
+			<div className='container'>
+				<h1 id='logo'> African Marketplace </h1>
+				<p>A BloomTech Student Project</p>
+			</div>
+		</section>
 	);
 }

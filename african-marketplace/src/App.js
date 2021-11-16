@@ -34,7 +34,10 @@ function App() {
 				<Nav />
 				<Switch>
 					<Route exact path='/'>
-						<Home />
+						<div id='page-wrapper'>
+							<Header />
+							<Home />
+						</div>
 					</Route>
 
 					<Route path='/productList'>
