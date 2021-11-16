@@ -1,30 +1,46 @@
 import React from 'react';
 import { Form, Button } from 'react-bootstrap';
+import '../assets/css/Home.css';
+import Nav from './Nav';
 
 class Signup extends React.Component {
 	render() {
 		return (
-			<div>
-				<h1> I'm the Signup page </h1>
-				<Form>
-					<Form.Group className='mb-3' controlId='formBasicEmail'>
-						<Form.Label>Email address</Form.Label>
-						<Form.Control type='email' placeholder='Enter email' />
-						<Form.Text className='text-muted'>
-							We'll never share your email with anyone else.
-						</Form.Text>
-					</Form.Group>
+			<section id='header'>
+				<Nav />
+				<div className='container'>
+					<h1> Sign Up</h1>
+					<div className='page-wrapper'>
+						<Form>
+							<Form.Group className='mb-3' controlId='formBasicEmail'>
+								<br />
+								<Form.Control
+									type='email'
+									placeholder='Email address'
+								/>
+								<Form.Text className='text-muted'>
+									Please provide a valid email address. This will be
+									your login Id.
+								</Form.Text>
+							</Form.Group>
+							<br />
+							<Form.Group className='mb-3' controlId='text-muted'>
+								<Form.Control type='text' placeholder='Name' />
+							</Form.Group>
+							<br />
 
-					<Form.Group className='mb-3' controlId='formBasicPassword'>
-						<Form.Label>Password</Form.Label>
-						<Form.Control type='password' placeholder='Password' />
-					</Form.Group>
-					<Form.Group className='mb-3' controlId='formBasicCheckbox'>
-						<Form.Check type='checkbox' label='Check me out' />
-					</Form.Group>
-					<Button type='submit'>Submit</Button>
-				</Form>
-			</div>
+							<Form.Group className='mb-3' controlId='formBasicPassword'>
+								<Form.Control type='password' placeholder='Password' />
+							</Form.Group>
+							<br />
+							<Button type='submit'>Submit</Button>
+						</Form>
+						<p>
+							Already have an account? <a href='/Login'> Log in.</a>
+						</p>
+					</div>
+				</div>
+			</section>
 		);
 	}
 }
