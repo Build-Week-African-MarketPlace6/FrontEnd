@@ -1,46 +1,26 @@
 import React from 'react';
+import '../../assets/css/Home.css';
+import featuredOne from '../../assets/images/elena-mozhvilo-lfeSPLBxcKU-unsplash.jpg';
+import featuredTwo from '../../assets/images/karim-manjra-fm9wqDNXyQ0-unsplash.jpg';
+import featuredThree from '../../assets/images/kristina-balic-M13V8hgvm-E-unsplash.jpg';
 
 class Featured extends React.Component {
 	render() {
 		return (
-			<section id='features'>
+			<section className='featured'>
 				<div className='container'>
 					<header>
 						<h2>I am the Features Header</h2>
 					</header>
-					<div className='row aln-center'>
-						<div className='col-4 col-6-medium col-12-small'>
-							<section>
-								<img src='../../public/images/pic01.jpg' alt='' />
-								<header>
-									<h3>So this is one feature</h3>
-								</header>
-								<p>This is content in this particular feature</p>
-							</section>
+					<div className='feature-item'>
+						<div className='item-section'>
+							<img className='featured-img' src={featuredOne} alt='' />
 						</div>
-					</div>
-
-					<div className='row aln-center'>
-						<div className='col-4 col-6-medium col-12-small'>
-							<section>
-								<img src='../../public/images/pic01.jpg' alt='' />
-								<header>
-									<h3>So this is two features</h3>
-								</header>
-								<p>This is content in this particular feature</p>
-							</section>
+						<div className='item-section'>
+							<img className='featured-img' src={featuredTwo} alt='' />
 						</div>
-					</div>
-
-					<div className='row aln-center'>
-						<div className='col-4 col-6-medium col-12-small'>
-							<section>
-								<img src='../../public/images/pic01.jpg' alt='' />
-								<header>
-									<h3>So this is three features</h3>
-								</header>
-								<p>This is content in this particular feature</p>
-							</section>
+						<div className='item-section'>
+							<img className='featured-img' src={featuredThree} alt='' />
 						</div>
 					</div>
 				</div>
