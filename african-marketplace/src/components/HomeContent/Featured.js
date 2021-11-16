@@ -8,16 +8,18 @@ class Featured extends React.Component {
 	render() {
 		return (
 			<section id='features'>
-				<div class='container'>
+				<div className='container'>
 					<header>
 						<h2>
-							Featured <strong>Products!</strong>!
+							Featured <strong>Products</strong>
 						</h2>
 					</header>
-					<div class='row aln-center'>
-						<div class='col-4 col-6-medium col-12-small'>
+					<div className='row aln-center'>
+						<div className='col-4 col-6-medium col-12-small'>
 							<section>
-								<img src={featuredOne} alt='' />
+								<a href='#' className='image featured'>
+									<img src={featuredOne} alt='' />
+								</a>
 								<header>
 									<h3>Featured First Item</h3>
 								</header>
@@ -29,9 +31,11 @@ class Featured extends React.Component {
 								</p>
 							</section>
 						</div>
-						<div class='col-4 col-6-medium col-12-small'>
+						<div className='col-4 col-6-medium col-12-small'>
 							<section>
-								<img src={featuredTwo} alt='' />
+								<a href='#' className='image featured'>
+									<img src={featuredTwo} alt='' />
+								</a>
 								<header>
 									<h3>Nice! What is HTML5 UP?</h3>
 								</header>
@@ -42,9 +46,11 @@ class Featured extends React.Component {
 								</p>
 							</section>
 						</div>
-						<div class='col-4 col-6-medium col-12-small'>
+						<div className='col-4 col-6-medium col-12-small'>
 							<section>
-								<img src={featuredThree} alt='' />
+								<a href='#' className='image featured'>
+									<img src={featuredThree} alt='' />
+								</a>
 								<header>
 									<h3>What's this built with?</h3>
 								</header>

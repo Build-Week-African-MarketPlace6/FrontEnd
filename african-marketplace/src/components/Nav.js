@@ -37,6 +37,10 @@ export default function Nav() {
 						<span>Sign Up</span>
 					</Link>
 				</li>
+				<li className='icon brands fa-twitter'> </li>
+				<li className='icon brands fa-instagram'></li>
+				<li className='icon brands fa-dribbble'></li>
+				<li className='icon brands fa-facebook-f'></li>
 			</ul>
 		</nav>
 	);
