@@ -6,7 +6,16 @@ class Signup extends React.Component {
 		return (
 			<div>
 				<h1> I'm the Login page </h1>
-				<Form>
+                <Form>
+                    <label> Username
+                        <input
+                            type = "text"
+                            placeholder = "Enter Username"
+                        />
+
+                    </label>
+                </Form>
+				{/* <Form>
 					<Form.Group className='mb-3' controlId='formBasicEmail'>
 						<Form.Label>Email address</Form.Label>
 						<Form.Control type='email' placeholder='Enter email' />
@@ -23,7 +32,7 @@ class Signup extends React.Component {
 						<Form.Check type='checkbox' label='Check me out' />
 					</Form.Group>
 					<Button type='submit'>Submit</Button>
-				</Form>
+				</Form> */}
 			</div>
 		);
 	} 
