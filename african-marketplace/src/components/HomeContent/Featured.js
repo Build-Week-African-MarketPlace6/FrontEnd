@@ -1,6 +1,6 @@
 import React from 'react';
 import '../../assets/css/Home.css';
-import featuredOne from '../../assets/images/elena-mozhvilo-lfeSPLBxcKU-unsplash.jpg';
+import featuredOne from '../../assets/images/alexander-schimmeck-pKSm8hV62eI-unsplash.jpg';
 import featuredTwo from '../../assets/images/karim-manjra-fm9wqDNXyQ0-unsplash.jpg';
 import featuredThree from '../../assets/images/kristina-balic-M13V8hgvm-E-unsplash.jpg';
 

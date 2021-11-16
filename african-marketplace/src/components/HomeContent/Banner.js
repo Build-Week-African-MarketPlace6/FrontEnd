@@ -4,7 +4,14 @@ class Banner extends React.Component {
 	render() {
 		return (
 			<div>
-				<h1>Here's the Banner</h1>
+				<section className='banner'>
+					<div className='container'>
+						<p>
+							"The most effective way to do it, is to do it." --Amelia
+							Earhart
+						</p>
+					</div>
+				</section>
 			</div>
 		);
 	}
