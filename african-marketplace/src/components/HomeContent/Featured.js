@@ -11,7 +11,7 @@ class Featured extends React.Component {
 				<div className='container'>
 					<header>
 						<h2>
-							Featured <strong>Products</strong>
+							Monthly Featured <strong>Artist</strong>
 						</h2>
 					</header>
 					<div className='row aln-center'>
