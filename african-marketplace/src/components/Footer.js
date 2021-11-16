@@ -1,5 +1,4 @@
 import React from 'react';
-import Nav from './Nav';
 
 class Footer extends React.Component {
 	render() {
@@ -34,7 +33,9 @@ class Footer extends React.Component {
 												<li className='icon solid fa-phone'>
 													(000) 000-0000
 												</li>
-												<li class='icon solid fa-envelope'></li>
+												<li class='icon solid fa-envelope'>
+													students@bloomtech.edu
+												</li>
 											</ul>
 										</div>
 										<div className='col-6 col-12-small'>
@@ -52,10 +53,8 @@ class Footer extends React.Component {
 					</div>
 					<div id='copyright' className='container'>
 						<ul className='links'>
-							<li>&copy; Untitled. All rights reserved.</li>
-							<li>
-								Design: <a href='http://html5up.net'>HTML5 UP</a>
-							</li>
+							<li>&copy; BloomTech Students. All rights reserved.</li>
+							<li>Design: HTML5 UP</li>
 						</ul>
 					</div>
 				</section>
