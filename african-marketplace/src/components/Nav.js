@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import '../assets/css/Home.css';
 
@@ -14,7 +14,7 @@ export default function Nav() {
 
 				<li>
 					<Link
-						className='white-space nowrap icon solid fa-retweet'
+						className='white-space nowrap icon solid fa-store'
 						to='/productList'
 					>
 						<span>Marketplace</span>
