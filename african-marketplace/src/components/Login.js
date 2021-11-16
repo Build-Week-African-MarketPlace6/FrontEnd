@@ -1,7 +1,16 @@
+import axios from 'axios';
 import React from 'react';
 import { Form, Button } from 'react-bootstrap';
 
 class Signup extends React.Component {
+    
+    state = {
+        username: "",
+        password: ""
+    }
+
+    
+
 	render() {
 		return (
 			<div>
@@ -10,10 +19,23 @@ class Signup extends React.Component {
                     <label> Username
                         <input
                             type = "text"
+                            name = "username"
                             placeholder = "Enter Username"
+                            value = { state.username }
+                            onChange = { handleChange }
                         />
-
                     </label>
+
+                    <label> Password
+                        <input
+                            type = "text"
+                            name = "password"
+                            placeholder = "Enter password"
+                            value = { state.password }
+                            onChange = { handleChange }
+                        />
+                    </label>
+                    
                 </Form>
 				{/* <Form>
 					<Form.Group className='mb-3' controlId='formBasicEmail'>
