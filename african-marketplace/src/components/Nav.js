@@ -22,19 +22,19 @@ export default function Nav() {
 
 				<li>
 					<Link
-						className='white-space nowrap icon solid fa-cog'
-						to='/Signup'
+						className='white-space nowrap icon solid fa-retweet'
+						to='/AddProduct'
 					>
-						<span>Sign Up</span>
+						<span>Add Product</span>
 					</Link>
 				</li>
 
 				<li>
 					<Link
-						className='white-space nowrap icon solid fa-retweet'
-						to='/AddProduct'
+						className='white-space nowrap icon solid fa-cog'
+						to='/Signup'
 					>
-						<span>Add Product</span>
+						<span>Sign Up</span>
 					</Link>
 				</li>
 			</ul>

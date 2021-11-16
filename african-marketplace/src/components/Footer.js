@@ -12,12 +12,7 @@ class Footer extends React.Component {
 						</header>
 						<div className='row'>
 							<div className='col-6 col-12-medium'>
-								<section>
-									<h2>
-										{' '}
-										<strong>Get in touch:</strong>
-									</h2>
-								</section>
+								<section></section>
 							</div>
 							<div className='col-6 col-12-medium'>
 								<section>
@@ -52,7 +47,10 @@ class Footer extends React.Component {
 					</div>
 					<div id='copyright' className='container'>
 						<ul className='links'>
-							<li>&copy; Untitled. All rights reserved.</li>
+							<li>
+								&copy; African Marketplace, BloomTech Students. All
+								rights reserved.
+							</li>
 							<li>
 								Design: <a href='http://html5up.net'>HTML5 UP</a>
 							</li>
