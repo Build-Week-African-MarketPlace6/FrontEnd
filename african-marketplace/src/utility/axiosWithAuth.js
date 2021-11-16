@@ -5,7 +5,7 @@ export const axiosWithAuth = () => {
     const token = localStorage.getItem( "token" );
 
     return axios.create({
-        baseURL: "https://somthingappi.com/api",
+        baseURL: "https://marketplacelambda.herokuapp.com/api/owner/${localStorage.getItem('user_id')}/items",
         headers: {
             Authorization: token
         }

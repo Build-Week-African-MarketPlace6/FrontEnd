@@ -12,7 +12,7 @@ class Signup extends React.Component {
 						<Form.Control type='email' placeholder='Enter email' />
 						<Form.Text className='text-muted'>
 							We'll never share your email with anyone else.
-						</Form.Text>
+						</Form.Text
 					</Form.Group>
 
 					<Form.Group className='mb-3' controlId='formBasicPassword'>
@@ -26,7 +26,7 @@ class Signup extends React.Component {
 				</Form>
 			</div>
 		);
-	}
+	} 
 }
 
 export default Signup;
