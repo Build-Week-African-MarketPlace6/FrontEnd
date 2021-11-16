@@ -38,7 +38,6 @@ function App() {
       <Link to='/Login'>Login</Link>
       <Link to='/Signup'>Sign Up</Link>
 
-
    <Switch>
       <Route exact path="/">
         <div><h1>Home Page</h1></div>
