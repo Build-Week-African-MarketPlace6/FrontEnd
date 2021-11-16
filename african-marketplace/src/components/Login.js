@@ -1,30 +1,38 @@
 import React from 'react';
 import { Form, Button } from 'react-bootstrap';
+import Nav from './Nav';
+import { BrowserRouter as Link } from 'react-router-dom';
 
 class Signup extends React.Component {
 	render() {
 		return (
-			<div>
-				<h1> I'm the Login page </h1>
-				<Form>
-					<Form.Group className='mb-3' controlId='formBasicEmail'>
-						<Form.Label>Email address</Form.Label>
-						<Form.Control type='email' placeholder='Enter email' />
-						<Form.Text className='text-muted'>
-							We'll never share your email with anyone else.
-						</Form.Text>
-					</Form.Group>
+			<section id='header'>
+				<Nav />
+				<div className='container'>
+					<h1>Log In</h1>
+					<div className='page-wrapper'>
+						<Form>
+							<Form.Group className='mb-3' controlId='formBasicEmail'>
+								<Form.Label></Form.Label>
+								<Form.Control type='email' placeholder='Enter email' />
+								<Form.Text className='text-muted'>
+									Log into your account to add products.
+								</Form.Text>
+							</Form.Group>
 
-					<Form.Group className='mb-3' controlId='formBasicPassword'>
-						<Form.Label>Password</Form.Label>
-						<Form.Control type='password' placeholder='Password' />
-					</Form.Group>
-					<Form.Group className='mb-3' controlId='formBasicCheckbox'>
-						<Form.Check type='checkbox' label='Check me out' />
-					</Form.Group>
-					<Button type='submit'>Submit</Button>
-				</Form>
-			</div>
+							<Form.Group className='mb-3' controlId='formBasicPassword'>
+								<Form.Label></Form.Label>
+								<Form.Control type='password' placeholder='Password' />
+							</Form.Group>
+							<br />
+							<Button type='submit'>Submit</Button>
+						</Form>
+						<p>
+							Don't have an account yet? <a href='/Signup'> Sign up.</a>
+						</p>
+					</div>
+				</div>
+			</section>
 		);
 	}
 }
