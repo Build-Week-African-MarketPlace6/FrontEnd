@@ -2,12 +2,12 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import axios from 'axios';
+
 const AddForm = (props) => {
 
     const [newItem, setNewItem] = useState({
         item_name:"",
-        item_price:"",
-        item_id: Date.now(),
+        item_price:1,
         item_description:"",
     });
 
@@ -25,14 +25,14 @@ const AddForm = (props) => {
         if (newItem.item_name === "" || newItem.item_price === "" || newItem.item_description === "") {
             setError('Must fill out all')
     }else{
-        props.setProducts([...props.products, newItem])
-    //     axios.post(`https://marketplacelambda.herokuapp.com/api/shelf`, newItem)
-    //     .then(res => {
-    //         props.setProducts(res.data);
-    //     })
-    //     .catch(err=> {
-    //         console.log(err);
-    //       })
+        // props.setProducts([...props.products, newItem])
+        axios.post(`https://marketplacelambda.herokuapp.com/api/owner/1/items`, newItem)
+        .then(res => {
+            props.setProducts(res.data);
+        })
+        .catch(err=> {
+            console.log(err);
+          })
     }
         
     }
