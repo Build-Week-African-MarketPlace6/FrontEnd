@@ -24,7 +24,6 @@ class Signup extends React.Component {
 								<Form.Control type='password' placeholder='Password' />
 							</Form.Group>
 							<br />
-
 							<Button type='submit'>Submit</Button>
 						</Form>
 					</div>
