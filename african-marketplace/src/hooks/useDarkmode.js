@@ -5,17 +5,17 @@ const useDarkmode = () => {
 
     const [ darkmode, setDarkmode ] = useLocalStorage( false );
 
-    useEffect( () => {
+    // useEffect( () => {
 
-        console.log("darkmode:", darkmode);
+    //     console.log("darkmode:", darkmode);
 
-        if( darkmode === true ) {
-            document.body.classList.remove(" dark-mode ");
+    //     if( darkmode === true ) {
+    //         document.body.classList.remove(" dark-mode ");
 
-        } else {
-            document.body.classList.add(" dark-mode");
-        }
-    }, [ darkmode ]);
+    //     } else {
+    //         document.body.classList.add(" dark-mode");
+    //     }
+    // }, [ darkmode ]);
 
     return [ darkmode, setDarkmode ];
 } 
