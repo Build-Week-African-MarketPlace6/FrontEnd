@@ -23,11 +23,10 @@ function App() {
 	const addItem = (item) => {
 		setCart([...cart, item]);
 	};
-
-	const removeFromCart = (id) => {
-		setCart(cart.filter((i) => i.item_id !== id));
-	};
-
+  const removeFromCart = (id) => {
+    setCart(cart.filter((i) => i.item_id !== id));
+  }
+  
 	return (
 		<Router>
 			<div className='App'>
