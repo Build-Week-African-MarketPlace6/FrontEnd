@@ -7,20 +7,53 @@ import featuredThree from '../../assets/images/kristina-balic-M13V8hgvm-E-unspla
 class Featured extends React.Component {
 	render() {
 		return (
-			<section className='featured'>
-				<div className='container'>
+			<section id='features'>
+				<div class='container'>
 					<header>
-						<h2>I am the Features Header</h2>
+						<h2>
+							Featured <strong>Products!</strong>!
+						</h2>
 					</header>
-					<div className='feature-item'>
-						<div className='item-section'>
-							<img className='featured-img' src={featuredOne} alt='' />
+					<div class='row aln-center'>
+						<div class='col-4 col-6-medium col-12-small'>
+							<section>
+								<img src={featuredOne} alt='' />
+								<header>
+									<h3>Featured First Item</h3>
+								</header>
+								<p>
+									This is <strong>Strongly Typed</strong>, a free,
+									fully responsive site template by HTML5 UP. Free for
+									personal and commercial use under the CCA 3.0
+									license.
+								</p>
+							</section>
 						</div>
-						<div className='item-section'>
-							<img className='featured-img' src={featuredTwo} alt='' />
+						<div class='col-4 col-6-medium col-12-small'>
+							<section>
+								<img src={featuredTwo} alt='' />
+								<header>
+									<h3>Nice! What is HTML5 UP?</h3>
+								</header>
+								<p>
+									HTML5 UP is a side project of AJ’s(= me). I started
+									it as a way to both test my responsive tools and
+									sharpen up my coding and design skills a bit.
+								</p>
+							</section>
 						</div>
-						<div className='item-section'>
-							<img className='featured-img' src={featuredThree} alt='' />
+						<div class='col-4 col-6-medium col-12-small'>
+							<section>
+								<img src={featuredThree} alt='' />
+								<header>
+									<h3>What's this built with?</h3>
+								</header>
+								<p>
+									<strong>Responsive Tools</strong> is a simple set of
+									tools for building responsive sites and apps. All of
+									my templates at HTML5 UP are built using these tools.
+								</p>
+							</section>
 						</div>
 					</div>
 				</div>
