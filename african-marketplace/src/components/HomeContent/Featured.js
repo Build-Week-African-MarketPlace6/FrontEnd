@@ -4,12 +4,12 @@ class Featured extends React.Component {
 	render() {
 		return (
 			<section id='features'>
-				<div class='container'>
+				<div className='container'>
 					<header>
 						<h2>I am the Features Header</h2>
 					</header>
-					<div class='row aln-center'>
-						<div class='col-4 col-6-medium col-12-small'>
+					<div className='row aln-center'>
+						<div className='col-4 col-6-medium col-12-small'>
 							<section>
 								<img src='../../public/images/pic01.jpg' alt='' />
 								<header>
@@ -20,8 +20,8 @@ class Featured extends React.Component {
 						</div>
 					</div>
 
-					<div class='row aln-center'>
-						<div class='col-4 col-6-medium col-12-small'>
+					<div className='row aln-center'>
+						<div className='col-4 col-6-medium col-12-small'>
 							<section>
 								<img src='../../public/images/pic01.jpg' alt='' />
 								<header>
@@ -32,8 +32,8 @@ class Featured extends React.Component {
 						</div>
 					</div>
 
-					<div class='row aln-center'>
-						<div class='col-4 col-6-medium col-12-small'>
+					<div className='row aln-center'>
+						<div className='col-4 col-6-medium col-12-small'>
 							<section>
 								<img src='../../public/images/pic01.jpg' alt='' />
 								<header>
