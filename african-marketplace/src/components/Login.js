@@ -15,7 +15,7 @@ class Signup extends React.Component {
 								<Form.Label></Form.Label>
 								<Form.Control type='email' placeholder='Enter email' />
 								<Form.Text className='text-muted'>
-									We'll never share your email with anyone else.
+									Log into your account to add products.
 								</Form.Text>
 							</Form.Group>
 
@@ -23,9 +23,8 @@ class Signup extends React.Component {
 								<Form.Label></Form.Label>
 								<Form.Control type='password' placeholder='Password' />
 							</Form.Group>
-							<Form.Group className='mb-3' controlId='formBasicCheckbox'>
-								<Form.Check type='checkbox' label='Check me out' />
-							</Form.Group>
+							<br />
+
 							<Button type='submit'>Submit</Button>
 						</Form>
 					</div>
