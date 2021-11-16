@@ -35,6 +35,9 @@ class Signup extends React.Component {
 							<br />
 							<Button type='submit'>Submit</Button>
 						</Form>
+						<p>
+							Already have an account? <a href='/Login'> Log in.</a>
+						</p>
 					</div>
 				</div>
 			</section>

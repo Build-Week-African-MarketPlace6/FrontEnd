@@ -1,6 +1,7 @@
 import React from 'react';
 import { Form, Button } from 'react-bootstrap';
 import Nav from './Nav';
+import { BrowserRouter as Link } from 'react-router-dom';
 
 class Signup extends React.Component {
 	render() {
@@ -26,6 +27,9 @@ class Signup extends React.Component {
 							<br />
 							<Button type='submit'>Submit</Button>
 						</Form>
+						<p>
+							Don't have an account yet? <a href='/Signup'> Sign up.</a>
+						</p>
 					</div>
 				</div>
 			</section>

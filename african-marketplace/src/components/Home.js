@@ -12,7 +12,6 @@ class Home extends React.Component {
 			<div>
 				<Featured />
 				<Banner />
-				<Content />
 				<Footer />
 			</div>
 		);
