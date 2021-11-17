@@ -2,8 +2,34 @@ import React from 'react';
 import { Form, Button } from 'react-bootstrap';
 import '../assets/css/Home.css';
 import Nav from './Nav';
+import axios from 'axios';
 
 class Signup extends React.Component {
+
+    state = {
+        username: "",
+        password: ""
+    }
+
+    handleChange = event => {
+        this.state({
+            ...this.state,
+            [event.target.username]: event.target.value
+        })
+    }
+    
+    handleSubmit = () => {
+        axios.post("https://marketplacelambda.herokuapp.com/api/users/register", this.state)
+            .then(response => {
+                localStorage.setItem("token", response.data.payload);
+                localStorage.setItem("username", this.state.username);
+                this.props.history.push("/protected");
+
+            }).catch(error => {
+                console.error(error);
+            })
+    };
+    
 	render() {
 		return (
 			<section id='header'>

@@ -11,9 +11,6 @@ class Footer extends React.Component {
 								&copy; African Marketplace, BloomTech Students. All
 								rights reserved.
 							</li>
-							<li>
-								Design: <a href='http://html5up.net'>HTML5 UP</a>
-							</li>
 						</ul>
 					</div>
 				</section>

@@ -1,6 +1,8 @@
 import axios from 'axios';
 import React from 'react';
 import { Form, Button } from 'react-bootstrap';
+import Nav from './Nav';
+
 
 class Signup extends React.Component {
     
@@ -18,7 +20,7 @@ class Signup extends React.Component {
 
     
     handleSubmit = () => {
-        axios.post("http://localhost:5000/api/login", this.state)
+        axios.post("https://marketplacelambda.herokuapp.com/api/users/login", this.state)
             .then(response => {
                 localStorage.setItem("token", response.data.payload);
                 localStorage.setItem("username", this.state.username);
@@ -29,12 +31,13 @@ class Signup extends React.Component {
             })
     };
 
-    
-
 	render() {
 		return (
 			<div>
+
+                <Nav />
 				<h1> I'm the Login page </h1>
+                
                 <Form onSubmit = { this.handleSubmit }>
                     <label> Username
                         <input
@@ -42,7 +45,7 @@ class Signup extends React.Component {
                             name = "username"
                             placeholder = "Enter Username"
                             value = { this.state.username }
-                            onChange = { handleChange }
+                            onChange = { this.handleChange }
                         />
                     </label>
 
@@ -52,10 +55,11 @@ class Signup extends React.Component {
                             name = "password"
                             placeholder = "Enter password"
                             value = { this.state.password }
-                            onChange = { handleChange }
+                            onChange = { this.handleChange }
                         />
                     </label>
-                    
+
+                    <Button type='submit' onSubmit = { this.handleSubmit }>Login</Button>
                 </Form>
 				{/* <Form>
 					<Form.Group className='mb-3' controlId='formBasicEmail'>

@@ -11,7 +11,7 @@ class Featured extends React.Component {
 				<div className='container'>
 					<header>
 						<h2>
-							Featured <strong>Artists</strong>
+							 Our <strong>Services</strong> and <strong>Products</strong>
 						</h2>
 					</header>
 					<div className='row aln-center'>
@@ -20,8 +20,9 @@ class Featured extends React.Component {
 								<figure class='snip1401'>
 									<img src={featuredOne} alt='featured image 1' />
 									<figcaption>
-										<h3>Eleanor Fant</h3>
-										<p>Unique works in textile design.</p>
+										<h3>Procedure Agencies</h3>
+										<h6>Who we work with</h6>
+										<button>Click here for more info</button>
 									</figcaption>
 									<i class='ion-ios-basket-outline'></i>
 									<a href='../ProductList'></a>
