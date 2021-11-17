@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import '../assets/css/Home.css';
 
@@ -27,8 +27,8 @@ export default function Nav() {
 				<li className='icon brands fa-dribbble'></li>
 				<li className='icon brands fa-facebook-f'></li>
 				<li>
-					<Link className='white-space nowrap' to='/login'>
-						Login
+					<Link className='white-space nowrap' to='/signup'>
+						Account
 					</Link>
 				</li>
 			</ul>

@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import Product from './Product';
-import { Link } from 'react-router-dom';
 import AddForm from './AddForm';
 
 const ProductList = (props) => {

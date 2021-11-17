@@ -7,8 +7,7 @@ class Banner extends React.Component {
 				<section id='banner'>
 					<div className='container'>
 						<p>
-							"The most effective way to do it, is to do it." --Amelia
-							Earhart
+						Sauti Africa empowers small business owners, particularly women, to improve their business and economic opportunities to grow out of poverty. You will build a platform to enable these business owners to create listing for items they have for sale.
 						</p>
 					</div>
 				</section>

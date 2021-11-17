@@ -1,6 +1,6 @@
 import './App.css';
-import { useState } from 'react';
-import { BrowserRouter as Router, Link, Route, Switch } from 'react-router-dom';
+import React, { useState } from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import ProductList from './components/ProductList';
 import ShoppingCart from './components/ShoppingCart';
 import Header from './components/Header';
@@ -8,17 +8,10 @@ import Home from './components/Home';
 import Login from './components/Login';
 import Signup from './components/Signup';
 import Nav from './components/Nav';
-import useDarkmode from './hooks/useDarkmode';
 // import PrivateRoute from './components/PrivateRoute';
 
 function App() {
 	const [cart, setCart] = useState([]);
-	const [darkmode, setDarkmode] = useDarkmode();
-
-	// const toggleMode = event => {
-	//   event.preventDefault();
-	//   setDarkmode(!darkmode);
-	// }
 
 	const addItem = (item) => {
 		setCart([...cart, item]);
