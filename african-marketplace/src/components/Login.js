@@ -9,19 +9,39 @@ class Signup extends React.Component {
         password: ""
     }
 
+    handleChange = event => {
+        this.state({
+            ...this.state,
+            [event.target.username]: event.target.value
+        })
+    }
+
+    
+    handleSubmit = () => {
+        axios.post("http://localhost:5000/api/login", this.state)
+            .then(response => {
+                localStorage.setItem("token", response.data.payload);
+                localStorage.setItem("username", this.state.username);
+                this.props.history.push("/protected");
+
+            }).catch(error => {
+                console.error(error);
+            })
+    };
+
     
 
 	render() {
 		return (
 			<div>
 				<h1> I'm the Login page </h1>
-                <Form>
+                <Form onSubmit = { this.handleSubmit }>
                     <label> Username
                         <input
                             type = "text"
                             name = "username"
                             placeholder = "Enter Username"
-                            value = { state.username }
+                            value = { this.state.username }
                             onChange = { handleChange }
                         />
                     </label>
@@ -31,7 +51,7 @@ class Signup extends React.Component {
                             type = "text"
                             name = "password"
                             placeholder = "Enter password"
-                            value = { state.password }
+                            value = { this.state.password }
                             onChange = { handleChange }
                         />
                     </label>
