@@ -47,10 +47,12 @@ class Signup extends React.Component {
                             </Form.Group> */}
                             <br />
                             <Form.Group className='mb-3' controlId='text-muted'>
+                                <label>Username</label>
                                 <Form.Control name='username' onChange={this.handleChange} value={this.state.username} type='text' placeholder='Username' />
                             </Form.Group>
                             <br />
                             <Form.Group className='mb-3' controlId='formBasicPassword'>
+                                <label>Password</label>
                                 <Form.Control name='password'onChange={this.handleChange} value={this.state.password} type='password' placeholder='Password' />
                             </Form.Group>
                             <br />
