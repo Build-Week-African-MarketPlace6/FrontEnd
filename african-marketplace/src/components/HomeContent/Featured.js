@@ -22,10 +22,9 @@ class Featured extends React.Component {
 									<figcaption>
 										<h3>Procedure Agencies</h3>
 										<h6>Who we work with</h6>
-										<button>Click here for more info</button>
 									</figcaption>
 									<i class='ion-ios-basket-outline'></i>
-									<a href='../ProductList'></a>
+									<a href='../Procedure'></a>
 								</figure>
 							</section>
 						</div>
