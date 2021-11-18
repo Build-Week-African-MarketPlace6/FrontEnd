@@ -12,9 +12,9 @@ class Signup extends React.Component {
     }
 
     handleChange = event => {
-        this.state({
+        this.setState({
             ...this.state,
-            [event.target.username]: event.target.value
+            [event.target.name]: event.target.value
         })
     }
 
