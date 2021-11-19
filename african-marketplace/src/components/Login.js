@@ -87,10 +87,37 @@
 // export default Signup;
 import React from 'react';
 import { Form, Button } from 'react-bootstrap';
+import axios from 'axios';
 import Nav from './Nav';
 import { BrowserRouter as Link } from 'react-router-dom';
 
 class Signup extends React.Component {
+
+	state = {
+		username: "",
+		password: ""
+		    }
+		
+	handleChange = event => {
+		this.state({
+		    ...this.state,
+		    [event.target.username]: event.target.value
+		})
+	}
+		
+			
+	handleSubmit = () => {
+		axios.post("https://marketplacelambda.herokuapp.com/api/users/login", this.state)
+		    .then(response => {
+		        localStorage.setItem("token", response.data.payload);
+		        localStorage.setItem("username", this.state.username);
+		        this.props.history.push("/protected");
+		
+		    }).catch(error => {
+		                console.error(error);
+		        })
+	};
+
 	render() {
 		return (
 			<section id='header'>
