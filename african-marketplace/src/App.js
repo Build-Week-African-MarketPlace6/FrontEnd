@@ -40,10 +40,6 @@ function App() {
 						<ShoppingCart cart={cart} removeFromCart={removeFromCart} />
 					</Route>
 
-					<Route exact path='/' component={Login} />
-
-					<Route exact path='/signup' component={Signup} />
-
 					<Route path='/Signup'>
 						<Signup />
 					</Route>
